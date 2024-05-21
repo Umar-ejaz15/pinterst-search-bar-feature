@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="flex items-center justify-between p-5">
+      <div id="nav-part-1" class="flex justify-center items-center gap-4">
+        <i class="ri-pinterest-fill text-red-500 text-3xl"></i>
+        <a
+          href=""
+          class="text-xl font-bold bg-black text-white rounded-full p-3"
+          >Home</a
+        >
+        <a href="" class="t font-bold">Create</a>
+      </div>
+      <div id="nav-part-2  " class="w-full relative">
+        <div class="searchbar h-auto flex flex-col justify-center p-2 w-full ">
+          <input
+            id="search"
+            type="text"
+            class="pl-4 searchup w-full rounded-full h-14 bg-zinc-200 p-2 active:border-blue-700"
+            placeholder=" Search"
+          />
+        </div>
+        <div class="navdown hidden z-10 p-2 h-auto w-full bg-white absolute top-[100%]">
+   
+        </div>
+       
+      </div>
+      <div
+        id="nav-part-3 "
+        class="flex justify-center items-center text-zinc-500 text-xl gap-4"
+      >
+        <i class="ri-notification-3-fill"></i>
+        <i class="ri-message-2-line"></i>
+        <i class="ri-user-3-line"></i>
+      </div>
+    </nav>
+
+    <div class="body w-full h-[100vh]">
+      <div class="content w-full flex justify-center">
+        <div class="overlay hidden fixed w-full h-screen bg-black/80"></div>
+        <div class="container">
+          <div
+            class="img-container w-full h-[100%] justify-center flex gap-10 flex-wrap"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
